@@ -1,21 +1,27 @@
 {
-  "name": "@onivoro/isomorphic-try-json",
-  "version": "0.1.0",
-  "repository": {
-    "url": "https://github.com/onivoro/isomorphic-try-json.git"
-  },
-  "scripts": {
-    "test": "jest",
-    "build": "tsc -p tsconfig.json",
-    "release": "rm -rf dist && npm run build && npm version minor && cp package.json dist && cd dist && npm publish --access public"
-  },
-  "devDependencies": {
-    "@types/jest": "^26.0.14",
-    "@types/node": "^14.11.2",
-    "faker": "^5.4.0",
-    "jest": "^26.4.2",
-    "ts-jest": "^26.4.1",
-    "typescript": "^4.0.3"
-  },
-  "dependencies": {}
+    "name": "@onivoro/isomorphic-try-json",
+    "version": "0.1.2",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/types/index.d.ts",
+    "files": [
+        "dist/*"
+    ],
+    "scripts": {
+        "push": "onx Publish",
+        "build": "onx Build"
+    },
+    "exports": {
+        ".": {
+            "types": "./dist/types/index.d.ts",
+            "require": "./dist/cjs/index.js",
+            "import": "./dist/esm/index.js",
+            "default": "./dist/esm/lib.js"
+        }
+    },
+    "devDependencies": {
+        "@onivoro/cli": "*",
+        "@types/jest": "*",
+        "typescript": "*"
+    }
 }
