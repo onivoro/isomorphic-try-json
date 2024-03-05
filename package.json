@@ -30,6 +30,9 @@
         "@types/jest": "*",
         "typescript": "*"
     },
+    "onx": {
+        "platform": "isomorphic"
+    },
     "engines": {
         "node": "18.19.1",
         "npm": "10.2.4"
