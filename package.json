@@ -8,8 +8,10 @@
         "dist/*"
     ],
     "scripts": {
-        "push": "onx Publish",
-        "build": "onx Build"
+        "build": "onx Build",
+        "deploy": "onx Publish",
+        "test": "onx Test",
+        "update": "onx Update"
     },
     "exports": {
         ".": {
@@ -20,7 +22,7 @@
         }
     },
     "devDependencies": {
-        "@onivoro/cli": "*",
+        "@onivoro/cli": "^0.0.28",
         "@types/jest": "*",
         "typescript": "*"
     }
