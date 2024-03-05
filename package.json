@@ -1,6 +1,9 @@
 {
     "name": "@onivoro/isomorphic-try-json",
     "version": "0.1.3",
+    "repository": {
+        "url": "https://github.com/onivoro/isomorphic-try-json.git"
+    },
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
     "types": "dist/types/index.d.ts",
@@ -11,7 +14,8 @@
         "build": "onx Build",
         "deploy": "onx Publish",
         "test": "onx Test",
-        "update": "onx Update"
+        "update": "onx Update",
+        "onx": "onx"
     },
     "exports": {
         ".": {
@@ -22,8 +26,12 @@
         }
     },
     "devDependencies": {
-        "@onivoro/cli": "^0.0.28",
+        "@onivoro/cli": "^0.0.29",
         "@types/jest": "*",
         "typescript": "*"
+    },
+    "engines": {
+        "node": "18.19.1",
+        "npm": "10.2.4"
     }
 }
