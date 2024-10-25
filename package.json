@@ -26,7 +26,7 @@
         }
     },
     "devDependencies": {
-        "@onivoro/cli": "^0.0.29",
+        "@onivoro/cli": "^22.0.3",
         "@types/jest": "*",
         "typescript": "*"
     },
@@ -34,7 +34,7 @@
         "platform": "isomorphic"
     },
     "engines": {
-        "node": "18.19.1",
-        "npm": "10.2.4"
+        "node": "22.10.0",
+        "npm": "10.9.0"
     }
 }
